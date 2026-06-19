@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RegistroCliente/RegistroCliente.csproj" />
+  <Project Path="Registro_impresiones/Registro_impresiones.csproj" Id="dc5fa86c-e48f-4095-9ad3-1ad9265250c0" />
+</Solution>

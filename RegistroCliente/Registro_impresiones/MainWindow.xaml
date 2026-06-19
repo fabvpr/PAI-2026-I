@@ -1,0 +1,39 @@
+﻿<Window x:Class="Registro_impresiones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro_impresiones"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="txt_registro_impresion">
+        <Label Content="Cliente" HorizontalAlignment="Left" Margin="95,7,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="84,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tarifa:" HorizontalAlignment="Left" Margin="95,69,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nro.Celular" HorizontalAlignment="Left" Margin="459,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Páginas" HorizontalAlignment="Left" Margin="272,38,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_cantidad" HorizontalAlignment="Left" Margin="147,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_cliente" HorizontalAlignment="Left" Margin="147,15,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="txt_cliente_TextChanged"/>
+        <TextBox x:Name="txt_celular" HorizontalAlignment="Left" Margin="533,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="rb_escolar" Content="Escolar" HorizontalAlignment="Left" Margin="151,75,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rb_universitario" Content="Universitario" HorizontalAlignment="Left" Margin="224,75,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rb_organizacion" Content="Organización" HorizontalAlignment="Left" Margin="329,75,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bt_resultado" Content="Estadística" HorizontalAlignment="Left" Margin="534,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nro. Impo. escolar" HorizontalAlignment="Left" Margin="12,388,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nro. Impo. universitario" HorizontalAlignment="Left" Margin="249,388,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nro. impo. Organizacional" HorizontalAlignment="Left" Margin="509,388,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_resultadoEscolar" HorizontalAlignment="Left" Margin="124,392,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_resultadoUniversitario" HorizontalAlignment="Left" Margin="389,392,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_resultadoOrganizacion" HorizontalAlignment="Left" Margin="662,392,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cliente" HorizontalAlignment="Left" Margin="89,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nro.Celular" HorizontalAlignment="Left" Margin="232,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="391,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tarifa" HorizontalAlignment="Left" Margin="555,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Importe" HorizontalAlignment="Left" Margin="696,102,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbox_cliente" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,128,621,51" DisplayMemberPath="{Binding txt_cliente}"/>
+        <ListBox x:Name="lbox_celular" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="187,128,454,51"/>
+        <ListBox x:Name="lbox_cantidad" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="351,128,306,51"/>
+        <ListBox x:Name="lbox_tarifa" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="509,128,157,51"/>
+        <ListBox x:Name="lbox_importe" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="648,128,10,51"/>
+    </Grid>
+</Window>

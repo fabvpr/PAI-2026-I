@@ -1,7 +1,7 @@
-﻿<Application x:Class="Callculo_impuesto.App"
+﻿<Application x:Class="RegistroCliente.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Callculo_impuesto"
+             xmlns:local="clr-namespace:RegistroCliente"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

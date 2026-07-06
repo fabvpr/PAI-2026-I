@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace CalcularDeuda
+namespace CentroOdontológico
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -15,5 +15,14 @@ namespace Registro_de_clientes
 
         public string EstadoCivil { get; set; }
 
+        public Cliente (string nombre, string apellidos, string dni, string dirección, string estadoCivil)
+        {
+            Nombre = nombre;
+            Apellidos = apellidos;
+            DNI = dni;
+            Direccion = dirección;
+            EstadoCivil = estadoCivil;
+        }
+
     }
 }

@@ -30,7 +30,7 @@
         <Button x:Name="btnEstadistica" Content="Estadística" HorizontalAlignment="Left" Margin="590,180,0,0" VerticalAlignment="Top" Width="90" Height="28" Click="btnEstadistica_Click"/>
         <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="700,180,0,0" VerticalAlignment="Top" Width="90" Height="28" Click="btnSalir_Click"/>
 
-        <ListView x:Name="lvRegistro" Margin="10,230,10,60">
+        <ListView x:Name="lvClientes" Margin="10,230,10,60">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Apellidos" DisplayMemberBinding="{Binding Apellidos}" Width="180"/>

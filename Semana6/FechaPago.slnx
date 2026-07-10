@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="EncriptarClave/EncriptarClave.csproj" Id="a2178c2d-792f-4853-b228-8701d4103a41" />
   <Project Path="OrdenarCadena/OrdenarCadena.csproj" Id="9882e10f-2327-437a-90d1-c9ee812543db" />
   <Project Path="Semana_5/Semana_5.csproj" />
 </Solution>

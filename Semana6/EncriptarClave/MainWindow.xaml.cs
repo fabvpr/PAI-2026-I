@@ -64,7 +64,6 @@ namespace EncriptarClave
                 if (char.IsLetter(caracter))
                 {
                     char nuevoCaracter = (char)(caracter - dezplazamiento);
-
                     claveEncriptada = claveEncriptada + nuevoCaracter.ToString();
                 }
                 txtClaveEncriptada.Text = claveEncriptada;

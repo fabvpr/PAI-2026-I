@@ -3,11 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:MenúsContextuales"
         mc:Ignorable="d"
         Title="MenúPrincipal" Height="450" Width="800">
     <Grid>
-        <DockPanel LastChildFill="False">
+        <DockPanel LastChildFill="False" Margin="0,-10,0,10">
             <Menu HorizontalAlignment="Left" DockPanel.Dock="Top">
                 <MenuItem Header="Archivo">
                     <MenuItem Header="Nuevo"/>
@@ -28,11 +29,20 @@
                     <Button Content="Guardar"/>
                 </ToolBar>
                 <ToolBar>
-                    <Button Content="Cortar"/>
-                    <Button Content="Copiar"/>
-                    <Button Content="Pegar"/>
+                    <Button Command="Cut"/>
+                        <materialDesign:PackIcon Kind="ContentCut" HorizontalAlignment="Center" Height="32"/>
+                    <Button Command="Copy"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Iconos/icons8-copy-48.png" Width="16" Height="16"/>
+                        <Label Content="Pegar"/>
+                    </StackPanel>
+
                 </ToolBar>
             </ToolBarTray>
+            <StackPanel>
+                
+            </StackPanel>
+            <TextBox TextWrapping="Wrap" Text="TextBox" DockPanel.Dock="Top" Height="184"/>
         </DockPanel>
     </Grid>
 </Window>

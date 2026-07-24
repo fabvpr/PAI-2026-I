@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="AdivinarEdad/AdivinarEdad.csproj" />
+  <Project Path="Imagenes/Imagenes.csproj" Id="8f146656-a407-4d38-a744-8741044bb488" />
   <Project Path="Tragamonedas/Tragamonedas.csproj" />
+  <Project Path="TragamonedasV2/TragamonedasV2.csproj" Id="b7015fed-f5f0-4b10-b1ee-5a0bb6559a92" />
 </Solution>

@@ -20,7 +20,7 @@ namespace Tragamonedas
         private DispatcherTimer timerReloj;
         private DispatcherTimer timerJuego;
         private Random random = new Random();
-
+        //total de intentos en este caso 60 intentos, cada intento es un tick del timerJuego
         private const int Tiempo_total_ticks = 60;
         private int contadorTicks=0;
         public MainWindow()
